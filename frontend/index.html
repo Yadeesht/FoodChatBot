@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Quick Bites - Fast Food Restaurant</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+</head>
+<body>
+    <div class="container">
+        <header>
+            <div class="header-content">
+                <h1>Welcome to Quick Bites!</h1>
+                <p>Your favorite fast food stop in Chennai</p>
+                <div class="header-icons">
+                    <i class="fas fa-utensils"></i>
+                    <i class="fas fa-hamburger"></i>
+                    <i class="fas fa-pepper-hot"></i>
+                </div>
+            </div>
+        </header>
+
+        <main class="content-wrapper">
+            <section id="menu">
+                <h2><i class="fas fa-book-open"></i> Our Menu</h2>
+                <div class="menu-grid">
+                    <div class="menu-item">
+                        <h3>Pav Bhaji</h3>
+                        <p class="price">$6.00</p>
+                        <p class="description">Spicy mashed vegetables served with buttered bread</p>
+                    </div>
+                    <div class="menu-item">
+                        <h3>Chole Bhature</h3>
+                        <p class="price">$7.00</p>
+                        <p class="description">Chickpea curry with deep-fried bread</p>
+                    </div>
+                    <div class="menu-item">
+                        <h3>Pizza</h3>
+                        <p class="price">$8.00</p>
+                        <p class="description">Classic Italian pizza with Indian twist</p>
+                    </div>
+                    <div class="menu-item">
+                        <h3>Mango Lassi</h3>
+                        <p class="price">$5.00</p>
+                        <p class="description">Refreshing yogurt drink with mango</p>
+                    </div>
+                    <div class="menu-item">
+                        <h3>Masala Dosa</h3>
+                        <p class="price">$6.00</p>
+                        <p class="description">Crispy rice crepe with spiced potato filling</p>
+                    </div>
+                    <div class="menu-item">
+                        <h3>Vegetable Biryani</h3>
+                        <p class="price">$9.00</p>
+                        <p class="description">Fragrant rice cooked with mixed vegetables</p>
+                    </div>
+                    <div class="menu-item">
+                        <h3>Vada Pav</h3>
+                        <p class="price">$4.00</p>
+                        <p class="description">Spicy potato fritter in a bun</p>
+                    </div>
+                    <div class="menu-item">
+                        <h3>Rava Dosa</h3>
+                        <p class="price">$7.00</p>
+                        <p class="description">Crispy semolina crepe with chutney</p>
+                    </div>
+                    <div class="menu-item">
+                        <h3>Samosa</h3>
+                        <p class="price">$5.00</p>
+                        <p class="description">Spiced potato stuffed pastry</p>
+                    </div>
+                </div>
+            </section>
+
+            <section id="location">
+                <h2><i class="fas fa-map-marker-alt"></i> Find Us</h2>
+                <div class="location-content">
+                    <p>We are located at:</p>
+                    <p class="address">Vandalur, Chennai</p>
+                    <div class="map-placeholder">
+                        <i class="fas fa-map"></i>
+                        <p>Map coming soon</p>
+                    </div>
+                </div>
+            </section>
+        </main>
+
+
+        <footer>
+            <div class="footer-content">
+                <p>&copy; 2024 Quick Bites. All rights reserved.</p>
+                <div class="social-icons">
+                    <i class="fab fa-facebook"></i>
+                    <i class="fab fa-instagram"></i>
+                    <i class="fab fa-twitter"></i>
+                </div>
+            </div>
+        </footer>
+    </div>
+
+    <script src="https://www.gstatic.com/dialogflow-console/fast/messenger/bootstrap.js?v=1"></script>
+    <df-messenger
+    intent="WELCOME"
+    chat-title="chatbot"
+    agent-id="6a584c4e-b5fb-40e6-be3c-19fba2c47fa8"
+    language-code="en"
+    ></df-messenger>
+</body>
+</html>

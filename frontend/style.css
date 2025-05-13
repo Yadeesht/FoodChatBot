@@ -1,0 +1,262 @@
+body {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #121212;
+    color: #e0e0e0;
+    line-height: 1.6;
+}
+
+.container {
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+    padding-right: 350px; 
+    position: relative;
+}
+
+.content-wrapper {
+    flex: 1;
+    max-width: 1000px;
+    margin: 0 auto;
+    width: 100%;
+    padding: 0 20px;
+}
+
+.chatbot-space {
+    position: fixed;
+    right: 0;
+    top: 0;
+    width: 350px;
+    height: 100vh;
+    background-color: #1a1a1a;
+    border-left: 1px solid #333;
+    padding: 20px;
+    box-sizing: border-box;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.chatbot-placeholder {
+    text-align: center;
+    color: #bdbdbd;
+}
+
+.chatbot-placeholder i {
+    font-size: 3em;
+    color: #ff6347;
+    margin-bottom: 15px;
+}
+
+@media (max-width: 1200px) {
+    .container {
+        padding-right: 0;
+    }
+    
+    .chatbot-space {
+        display: none;
+    }
+}
+
+header {
+    background-color: #1a1a1a;
+    color: #ffffff;
+    text-align: center;
+    padding: 2em 0;
+    position: relative;
+    overflow: hidden;
+}
+
+header::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    height: 4px;
+    background: linear-gradient(90deg, #ff6347, #ff8c00, #ff6347);
+}
+
+.header-content {
+    max-width: 800px;
+    margin: 0 auto;
+    padding: 0 1em;
+}
+
+header h1 {
+    margin: 0;
+    font-size: 2.5em;
+    letter-spacing: 1px;
+    text-shadow: 0 2px 4px rgba(0,0,0,0.3);
+}
+
+header p {
+    margin: 0.5em 0 1em;
+    font-size: 1.1em;
+    color: #bdbdbd;
+}
+
+.header-icons {
+    font-size: 1.5em;
+    margin-top: 1em;
+}
+
+.header-icons i {
+    margin: 0 10px;
+    color: #ff6347;
+}
+
+section {
+    padding: 2em;
+    margin: 1.5em auto;
+    max-width: 1000px;
+    background-color: #1e1e1e; 
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0,0,0,0.2);
+}
+
+h2 {
+    color: #ff6347; 
+    border-bottom: 2px solid #ff6347;
+    padding-bottom: 0.5em;
+    margin-bottom: 1em;
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+
+.menu-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+    gap: 1.5em;
+}
+
+.menu-item {
+    background-color: #252525;
+    padding: 1.5em;
+    border-radius: 8px;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+    border-left: 4px solid #ff6347;
+}
+
+.menu-item:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 6px 12px rgba(0,0,0,0.3);
+}
+
+.menu-item h3 {
+    margin: 0 0 0.5em;
+    color: #ff8c00;
+    font-size: 1.3em;
+}
+
+.price {
+    font-weight: bold;
+    color: #ff6347;
+    font-size: 1.2em;
+    margin: 0.5em 0;
+}
+
+.description {
+    color: #bdbdbd;
+    font-size: 0.9em;
+    margin: 0.5em 0 0;
+}
+
+.location-content {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.address {
+    font-weight: bold;
+    font-size: 1.2em;
+    margin: 0.5em 0 1.5em;
+    color: #ff8c00;
+}
+
+.map-placeholder {
+    background-color: #252525;
+    width: 100%;
+    max-width: 600px;
+    height: 200px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    border-radius: 8px;
+    color: #bdbdbd;
+    font-size: 1.2em;
+}
+
+.map-placeholder i {
+    font-size: 3em;
+    margin-bottom: 0.5em;
+    color: #ff6347;
+}
+
+footer {
+    text-align: center;
+    padding: 2em 0;
+    margin-top: 2em;
+    background-color: #1a1a1a;
+    color: #bdbdbd;
+}
+
+.footer-content {
+    max-width: 800px;
+    margin: 0 auto;
+}
+
+.social-icons {
+    margin-top: 1em;
+    font-size: 1.5em;
+}
+
+.social-icons i {
+    margin: 0 10px;
+    color: #ff6347;
+    cursor: pointer;
+    transition: color 0.3s ease;
+}
+
+.social-icons i:hover {
+    color: #ff8c00;
+}
+
+@keyframes fadeIn {
+    from { opacity: 0; }
+    to { opacity: 1; }
+}
+
+section {
+    animation: fadeIn 0.5s ease-out;
+}
+
+@media (max-width: 768px) {
+    header h1 {
+        font-size: 2em;
+    }
+    
+    .menu-grid {
+        grid-template-columns: 1fr;
+    }
+    
+    section {
+        padding: 1.5em;
+        margin: 1em;
+    }
+}
+
+@media (max-width: 480px) {
+    header h1 {
+        font-size: 1.8em;
+    }
+    
+    header p {
+        font-size: 1em;
+    }
+}
